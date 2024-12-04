@@ -20,7 +20,7 @@ This is a Python-based interactive quiz game designed for **Cybersecurity** in t
 2. Navigate to the `quiz_sicurezza` directory:
 
     ```bash
-    cd quiz_sicurezza/
+    cd Quiz-Sicurezza-Informatica/
     ```
 
 3. Run the Python script:
