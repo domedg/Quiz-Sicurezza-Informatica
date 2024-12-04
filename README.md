@@ -17,11 +17,17 @@ This is a Python-based interactive quiz game designed for **Cybersecurity** in t
 
 ## Usage
 1. Clone the repository to your local machine.
-2. Run the Python script:
+2. Navigate to the `quiz_sicurezza` directory:
+
+    ```bash
+    cd quiz_sicurezza/
+    ```
+
+3. Run the Python script:
 
     ```bash
     python3 quiz_sicurezza.py
     ```
 
-3. Answer the questions with "v" for true or "f" for false.
-4. The quiz will display your score and time at the end.
+4. Answer the questions with "v" for true or "f" for false.
+5. The quiz will display your score and time at the end.
