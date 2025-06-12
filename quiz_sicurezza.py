@@ -17,7 +17,7 @@ def esegui_quiz(file_quiz):
     risposte_corrette = 0
     domande = []
 
-    with open(file_quiz, 'r') as file:
+    with open(file_quiz, 'r', encoding='utf-8') as file:
         for line in file:
             line = line.strip()
             if ',' not in line:
@@ -50,9 +50,9 @@ def esegui_quiz(file_quiz):
             # Chiedi all'utente se vuole aggiungere una nota
             nota = input("Vuoi aggiungere una nota a questa domanda? (lascia vuoto per non aggiungere): ")
             # Apri il file in modalità append
-            with open("domande_sbagliate.txt", "a") as file_domande_sbagliate:
+            with open("domande_sbagliate.txt", "a", encoding='utf-8') as file_domande_sbagliate:
                 if not file_domande_sbagliate:
-                    open("domande_sbagliate.txt", "w").close()
+                    open("domande_sbagliate.txt", "w", encoding='utf-8').close()
                 # Scrivi la domanda e la nota (se presente) nel file
                 file_domande_sbagliate.write(f"Domanda: {domanda}\n")
                 if nota:
@@ -65,5 +65,5 @@ def esegui_quiz(file_quiz):
     print(f"\n\nHai completato il quiz in {int(minuti)} minuti e {int(secondi)} secondi.")  # Passo 6
     print(f"Il tuo punteggio è {risposte_corrette}.")
 
-# Sostituisci 'SECquestions.txt' con il percorso corretto del file
+# Sostituisci 'domande_sicurezza.txt' con il percorso corretto del file
 esegui_quiz('domande_sicurezza.txt')
